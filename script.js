@@ -5,7 +5,8 @@ const buttons = [];
 const sortName = document.querySelector('.sort-name');
 const tableSort = document.querySelector('.table__sort');
 const sortRows = tableSort.querySelectorAll('td');
-
+//https://alekssharipov.github.io/tablejs/db.json;
+const apiUrl = 'https://alekssharipov.github.io/tablejs/db.json';
 let a;
 
 function newCard(obj) {
@@ -33,7 +34,7 @@ function newCard(obj) {
 
 
 function getUsers() {
-  return fetch(`http://127.0.0.1:5500/db.json`)
+  return fetch(apiUrl)
     .then((res) => {
       if (res.ok) {
         return res.json();
