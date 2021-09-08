@@ -1,0 +1,96 @@
+.root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  margin-top: 10%;
+  padding-left: 50px;
+}
+
+.table {
+  max-width: 50%;
+  width: 100%;
+  /* height: 200px; */
+  /* border: 1px solid black; */
+  /* margin: 10% auto; */
+  margin-top: 10%;
+}
+
+table {
+  /* border-collapse: collapse; */
+  /* border: 2px solid rgb(200,200,200); */
+  letter-spacing: 1px;
+  font-size: 24px;
+  width: 100%;
+  
+}
+
+td {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+
+td {
+  text-align: center;
+  /* width: 25%; */
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+.users__about {
+  padding-bottom: 5px;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.table__nabigation li {
+  width: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.table__nabigation li:hover, .active {
+  opacity: .7;
+}
+
+.users__about {
+  cursor: pointer;
+}
+
+.sort-name, .sort-lastName, .sort-about, .sort-color {
+  cursor: pointer;
+}
+
+.users__eye-color {
+  color: white;
+} 
+
+.users__refactoring {
+  cursor: pointer;
+}
