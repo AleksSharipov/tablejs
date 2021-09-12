@@ -27,10 +27,35 @@
   </section>
 
   <section class="form">
-    <div class="form__value"></div>
-    <form>
-      <input>
-    </form>
+    <div class="form__name form__lable">
+      <div>
+        <span>Имя:</span>
+        <p class="form__name_value"></p>
+      </div>
+      <input class="form__input_name" placeholder="Изменить имя:">
+    </div>
+    <div class="form__last-name form__lable">
+      <div>
+        <span>Фамилия:</span>
+        <p class="form__last-name_value"></p>
+      </div>
+      <input class="form__input_last-name" placeholder="Изменить фамилию:">
+    </div>
+    <div class="form__about ">
+      <div>
+        <span>О себе:</span>
+        <p class="form__about_value"></p>
+      </div>
+      <input class="form__input_about" placeholder="Изменить о себе:">
+    </div>
+    <div class="form__eye form__lable">
+      <div>
+        <span>Цвет глаз:</span>
+        <p class="form__eye_value"></p>
+      </div>
+      <input class="form__input_eye" placeholder="Изменить цвет глаз:">
+    </div>
+    <button class="form__btn"><span>Изменить</span></button>
   </section>
 
   <template id="table-template">
@@ -39,6 +64,7 @@
       <td class="users__last-name"></td>
       <td class="users__about"></td>
       <td class="users__eye-color"></td>
+      <td class="users__refactoring"></td>
     </tr>
   </template>
 
